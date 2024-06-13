@@ -1,0 +1,53 @@
+{
+  "name": "webdriverio-codebase",
+  "type": "module",
+  "devDependencies": {
+    "@types/webdriverio": "^5.0.0",
+    "@wdio/types": "^8.32.4",
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-wdio": "^8.24.12",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2"
+  },
+  "scripts": {
+    "browser": "wdio run config/browser.service.mjs",
+    "browser:chrome": "wdio run config/browser.chrome.service.mjs",
+    "browser:safari": "wdio run config/browser.safari.service.mjs",
+    "browser:firefox": "wdio run config/browser.firefox.service.mjs",
+    "appium:android": "wdio run config/appium.android.service.mjs",
+    "appium:ios": "wdio run config/appium.ios.service.mjs",
+    "browserstack": "wdio run config/browserstack.service.mjs",
+    "lint": "eslint --ext .js --ext .mjs .",
+    "lint:fix": "npm run lint -- --fix",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@faker-js/faker": "8.0.2",
+    "@wdio/appium-service": "8.28.6",
+    "@wdio/browserstack-service": "8.36.0",
+    "@wdio/cucumber-framework": "8.36.0",
+    "@wdio/firefox-profile-service": "8.36.0",
+    "@wdio/globals": "8.36.0",
+    "@wdio/local-runner": "8.36.0",
+    "@wdio/logger": "8.28.0",
+    "@wdio/spec-reporter": "8.36.0",
+    "appium": "2.5.3",
+    "appium-chromium-driver": "^1.3.24",
+    "appium-uiautomator2-driver": "3.1.0",
+    "appium-xcuitest-driver": "7.13.0",
+    "dayjs": "1.11.10",
+    "dotenv": "16.4.5",
+    "multiple-cucumber-html-reporter": "3.6.2",
+    "ts-node": "10.9.2",
+    "wdio-chromedriver-service": "8.1.1",
+    "chromedriver": "125.0.0",
+    "wdio-cucumberjs-json-reporter": "5.2.1",
+    "wdio-html-nice-reporter": "8.1.4",
+    "wdio-safaridriver-service": "2.1.1",
+    "wdio-wait-for": "3.0.11",
+    "webdriver": "8.36.1",
+    "zod": "3.22.4"
+  }
+}

@@ -1,0 +1,10 @@
+node_modules
+allure-results
+logs
+/reports
+.env
+bs.log
+local.log
+*.env
+.DS_Store
+package-lock.json
